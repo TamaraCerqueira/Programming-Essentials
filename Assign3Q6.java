@@ -1,8 +1,8 @@
 public class Assign3Q6 {
     public static void main(String args[]) {
         int currentValue = 5;
-
         int x = 0;
+        
         while (x < currentValue) {
             int y = 0;
             while (y < currentValue) {
@@ -22,35 +22,40 @@ public class Assign3Q6 {
             System.out.println();
             a++;
         }
-        int c = currentValue;
-        while (c > 0) {
+        int c = 0;
+        while (c < currentValue) {
             int d = 0;
-            while (d < c) {
-                System.out.print("* ");
+            while (d < 4 - c) {
+                System.out.print(" ");
                 d++;
             }
-            System.out.println();
-            c--;
-        }
-        int e = 0;
-        while (e < currentValue) {
-            int f = 0;
-            while (f < currentValue - e - 1) {
-                System.out.print(" ");
-                f++;
-            }
-            int j = 0;
-            while (j < 2 * e + 1) {
+            int e = 0;
+            while (e <= c) {
                 System.out.print("*");
-                j++;
+                e++;
             }
             System.out.println();
-            e++;
+            c++;
+        }
+        int f = 0;
+        while (f < currentValue) {
+            int g = 0;
+            while (g < currentValue - f) {
+                System.out.print(" ");
+                g++;
+            }
+            int h = 0;
+            while (h < 2 * f + 1) {
+                System.out.print("*");
+                h++;
+            }
+            System.out.println();
+            f++;
         }
         int m = 0;
         while (m <= currentValue) {
             int n = 0;
-            while (n < currentValue - m - 1) {
+            while (n <= currentValue - m - 1) {
                 System.out.print(" ");
                 n++;
             }
@@ -84,4 +89,3 @@ public class Assign3Q6 {
         }
     }
 }
-  

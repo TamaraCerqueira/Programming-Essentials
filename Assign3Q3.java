@@ -1,10 +1,10 @@
 public class Assign3Q3 {
     public static void main(String args[]) {
         int currentValue = 5; 
-        long factorialNumber = 1; 
+        int gama = 1; 
         for (int beta = 1; beta <= currentValue; beta++) {
-            factorialNumber *= beta;
+            gama *= beta;
         }
-        System.out.println("The number " + currentValue + " is: " + factorialNumber);
+        System.out.println("The number " + currentValue + " is: " + gama);
     }
 }

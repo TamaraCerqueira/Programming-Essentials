@@ -15,16 +15,18 @@ public class Assign3Q4 {
             }
             System.out.println();
         }
-
-        for (int c = currentValue; c > 0; c--) {
-            for (int d = 0; d < c; d++) {
-            System.out.print("* ");
-             }
+        for (int c = 0; c < currentValue; c++) {
+            for (int d = 0; d < 4 - c; d++) {
+                System.out.print(" ");
+            }
+            for (int d = 0; d <= c; d++) {
+                System.out.print("*");
+            }
             System.out.println();
         }
         
         for (int e = 0; e < currentValue; e++) {
-            for (int f = 0; f < currentValue - e - 1; f++) {
+            for (int f = 0; f < currentValue - e; f++) {
                 System.out.print(" ");
             }
 
@@ -37,7 +39,7 @@ public class Assign3Q4 {
         }
      
         for (int m = 0; m <= currentValue; m++) {
-            for (int n = 0; n < currentValue - m - 1; n++) {
+            for (int n = 0; n <= currentValue - m - 1; n++) {
                 System.out.print(" ");
             }
 
